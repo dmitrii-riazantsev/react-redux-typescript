@@ -1,17 +1,23 @@
-module.exports = 
+import path from 'path';
+import webpack from 'webpack';
+// const path = require('path');
+// const webpack = require('webpack');
+const ProgressBarPlugin = require('progress-bar-webpack-plugin');
+
+
+const config: webpack.Configuration =
 {
     entry: './src/main',
     output: 
     {
-        filename: 'bundle.js',
-        path: __dirname + '/dist'
+        path: path.resolve(__dirname, 'dist'),
+        filename: 'bundle.js'
     },
     devtool: 'source-map',// Enable sourcemaps for debugging webpack's output.
     resolve: 
     {
         extensions: ['.ts', '.tsx', '.js', '.json']// Add '.ts' and '.tsx' as resolvable extensions.
     },
-
     module: 
     {
         rules: 
@@ -35,5 +41,9 @@ module.exports =
     {
         'react': 'React',
         'react-dom': 'ReactDOM'
-    }
+    },
+    plugins:
+    [
+        new ProgressBarPlugin()
+    ]
 };
