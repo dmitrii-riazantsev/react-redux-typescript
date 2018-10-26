@@ -2,12 +2,14 @@
     "name": "react-redux-typescript",
     "version": "1.0.0",
     "description": "Boilerplate for React + Redux project using TypeScript and Webpack",
-    "main": "./src/main.ts",
-    "repository": {
+    "main": "./src/main.tsx",
+    "repository": 
+    {
         "type": "git",
         "url": "git+https://github.com/dmitrii-riazantsev/react-redux-typescript.git"
     },
-    "keywords": [
+    "keywords": 
+    [
         "React",
         "Redux",
         "TypeScript",
@@ -15,19 +17,24 @@
     ],
     "author": "Riazantsev Dmitrii",
     "license": "ISC",
-    "bugs": {
+    "bugs": 
+    {
         "url": "https://github.com/dmitrii-riazantsev/react-redux-typescript/issues"
     },
     "homepage": "https://github.com/dmitrii-riazantsev/react-redux-typescript#readme",
-    "scripts": {
-        "build": "webpack",
+    "scripts": 
+    {
+        "build": "webpack --mode=development --progress",
+        "release": "webpack --mode=production --progress",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
-    "dependencies": {
+    "dependencies": 
+    {
         "react": "^16.6.0",
         "react-dom": "^16.6.0"
     },
-    "devDependencies": {
+    "devDependencies": 
+    {
         "@types/react": "^16.4.18",
         "@types/react-dom": "^16.0.9",
         "awesome-typescript-loader": "^5.2.1",
