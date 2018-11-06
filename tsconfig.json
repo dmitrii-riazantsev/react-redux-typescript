@@ -5,10 +5,15 @@
         "sourceMap": true,
         "noImplicitAny": true,
         "module": "commonjs",
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
         "target": "es5",
         "lib": ["esnext", "dom"],
         "jsx": "react"
     },
+    "exclude": [
+        "node_modules"
+    ],
     "include": 
     [
         "./src/**/*"
