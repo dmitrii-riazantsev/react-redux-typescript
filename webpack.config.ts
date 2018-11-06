@@ -1,7 +1,5 @@
-import path from 'path';
-import webpack from 'webpack';
-// const path = require('path');
-// const webpack = require('webpack');
+import * as path from 'path';
+import * as webpack from 'webpack';
 const ProgressBarPlugin = require('progress-bar-webpack-plugin');
 
 
@@ -47,3 +45,5 @@ const config: webpack.Configuration =
         new ProgressBarPlugin()
     ]
 };
+
+export default config;
